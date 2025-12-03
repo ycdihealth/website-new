@@ -1,0 +1,50 @@
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import heroImage from "@assets/generated_images/bright_airy_wellness_hero_image.png";
+
+export function Hero() {
+  return (
+    <section className="relative min-h-[80vh] flex items-center overflow-hidden bg-secondary/10">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroImage} 
+          alt="Bright healthy living space" 
+          className="w-full h-full object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-transparent" />
+      </div>
+
+      <div className="container relative z-10 px-4 md:px-8 pt-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-2xl space-y-6"
+        >
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold tracking-wide uppercase">
+            Reclaim Your Vitality
+          </span>
+          <h1 className="font-heading text-5xl md:text-7xl font-bold text-foreground leading-[1.1]">
+            Transform Your Health, <span className="text-primary italic">One Step</span> at a Time
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
+            Personalized health coaching to help you build sustainable habits, find balance, and feel your absolute best.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <Button asChild size="xl" className="rounded-full text-lg px-8 h-14 bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all">
+              <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
+                Book Your Free Call
+              </a>
+            </Button>
+            <Button asChild size="xl" variant="outline" className="rounded-full text-lg px-8 h-14 bg-background/50 backdrop-blur border-primary/20 text-primary hover:bg-primary/5">
+              <a href="#meet">
+                Meet Your Coach
+              </a>
+            </Button>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
