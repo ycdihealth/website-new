@@ -1,4 +1,5 @@
-import { CheckCircle, Heart, Sun, Sprout } from "lucide-react";
+import { CheckCircle, Heart, Sun, Sprout, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import foodImage from "@assets/generated_images/fresh_healthy_food_ingredients.png";
 
 const features = [
@@ -35,21 +36,33 @@ export function Features() {
             />
           </div>
           <div className="order-1 md:order-2 space-y-6">
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground">
-              Nourish Your Body, <br/>
-              <span className="text-accent">Love Your Life</span>
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight">
+              Whole-Person Coaching <br/>
+              <span className="text-primary text-3xl md:text-4xl block mt-2">(Because You’re More Than Your Step Count)</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Health isn't about deprivation or willpower. It's about finding joy in nourishment and creating a lifestyle that supports your goals naturally.
+              We work on the whole you:
             </p>
-            <ul className="space-y-3 pt-4">
-              {["Evidence-based nutrition advice", "Mindset coaching & support", "Simple, delicious recipes", "Accountability that actually works"].map((item, i) => (
-                <li key={i} className="flex items-center gap-3 text-foreground/80">
+            <ul className="space-y-3 pt-2">
+              {["Habits", "Nutrition", "Movement", "Stress", "Sleep", "And everything that plays into your well-being"].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-foreground/80 font-medium">
                   <CheckCircle className="h-5 w-5 text-primary shrink-0" />
                   {item}
                 </li>
               ))}
             </ul>
+            <p className="text-lg text-muted-foreground leading-relaxed pt-4">
+              Plus, I support all dietary preferences - gluten free, dairy free, vegan, vegetarian, and <span className="italic text-foreground">“I swear I’m trying.”</span>
+            </p>
+            
+            <div className="pt-4">
+              <Button asChild size="xl" className="rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg h-14 px-8">
+                <a href="https://calendly.com/youcandoithealth/free-discovery-call?back=1" target="_blank" rel="noopener noreferrer">
+                  Help Me Fix My Life (Gently)
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
 
