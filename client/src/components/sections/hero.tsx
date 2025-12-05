@@ -26,15 +26,15 @@ export function Hero() {
             Reclaim Your Vitality
           </span>
           <h1 className="font-heading text-5xl md:text-7xl font-bold text-foreground leading-[1.1]">
-            Transform Your Health, <span className="text-primary italic">One Step</span> at a Time
+            Hey, You Deserve to Feel Amazing
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-            Personalized health coaching to help you build sustainable habits, find balance, and feel your absolute best.
+            Let’s team up and make a plan that fits your real life with simple habits, personalized guidance, and support every step of the way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button asChild size="xl" className="rounded-full text-lg px-8 h-14 bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all">
               <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
-                Book Your Free Call
+                Let’s Do This!
               </a>
             </Button>
             <Button asChild size="xl" variant="outline" className="rounded-full text-lg px-8 h-14 bg-background/50 backdrop-blur border-primary/20 text-primary hover:bg-primary/5">
