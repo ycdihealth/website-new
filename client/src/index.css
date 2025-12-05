@@ -34,67 +34,72 @@
 }
 
 :root {
-  /* Earthy, Fresh & Vital Palette */
-  --background: 60 20% 98%; /* Soft cream/off-white */
-  --foreground: 140 15% 25%; /* Deep forest green text */
+  /* You Can Do It Palette */
+  /* #21385A (Dark Blue) -> 216 46% 24% */
+  /* #2FBBB2 (Teal) -> 176 60% 46% */
+  /* #F5795A (Coral) -> 12 88% 66% */
+  /* #D8F888 (Lime Green) -> 77 89% 75% */
+
+  --background: 0 0% 100%; /* White background */
+  --foreground: 216 46% 24%; /* Dark Blue Text */
   
   --card: 0 0% 100%;
-  --card-foreground: 140 15% 25%;
+  --card-foreground: 216 46% 24%;
   
   --popover: 0 0% 100%;
-  --popover-foreground: 140 15% 25%;
+  --popover-foreground: 216 46% 24%;
   
-  --primary: 142 35% 45%; /* Sage Green */
+  --primary: 176 60% 46%; /* Teal */
   --primary-foreground: 0 0% 100%;
   
-  --secondary: 35 40% 90%; /* Warm Beige/Sand */
-  --secondary-foreground: 140 15% 25%;
+  --secondary: 77 89% 75%; /* Lime Green */
+  --secondary-foreground: 216 46% 24%; /* Dark Blue text on Lime */
   
-  --muted: 60 10% 94%;
-  --muted-foreground: 140 10% 45%;
+  --muted: 216 20% 96%; /* Very light blue-grey */
+  --muted-foreground: 216 30% 50%;
   
-  --accent: 15 70% 65%; /* Terracotta/Coral accent */
+  --accent: 12 88% 66%; /* Coral */
   --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
   
-  --border: 140 10% 85%;
-  --input: 140 10% 85%;
-  --ring: 142 35% 45%;
+  --border: 216 20% 90%;
+  --input: 216 20% 90%;
+  --ring: 176 60% 46%;
   
   --radius: 0.5rem;
 }
 
 .dark {
-  /* Dark mode - Deep Forest Vibe */
-  --background: 140 20% 10%;
-  --foreground: 60 10% 90%;
+  /* Dark mode - Deep Ocean Vibe */
+  --background: 216 46% 10%; /* Very dark blue */
+  --foreground: 216 20% 95%;
   
-  --card: 140 20% 13%;
-  --card-foreground: 60 10% 90%;
+  --card: 216 46% 15%;
+  --card-foreground: 216 20% 95%;
   
-  --popover: 140 20% 13%;
-  --popover-foreground: 60 10% 90%;
+  --popover: 216 46% 15%;
+  --popover-foreground: 216 20% 95%;
   
-  --primary: 142 40% 55%;
-  --primary-foreground: 140 20% 10%;
+  --primary: 176 50% 50%; /* Teal adjusted for dark mode */
+  --primary-foreground: 216 46% 15%;
   
-  --secondary: 140 20% 20%;
-  --secondary-foreground: 60 10% 90%;
+  --secondary: 216 46% 24%; /* Dark Blue as secondary in dark mode */
+  --secondary-foreground: 0 0% 100%;
   
-  --muted: 140 20% 20%;
-  --muted-foreground: 140 10% 65%;
+  --muted: 216 46% 20%;
+  --muted-foreground: 216 20% 70%;
   
-  --accent: 15 70% 65%;
+  --accent: 12 88% 66%; /* Coral stays same */
   --accent-foreground: 0 0% 100%;
   
   --destructive: 0 62% 30%;
   --destructive-foreground: 0 0% 98%;
   
-  --border: 140 20% 25%;
-  --input: 140 20% 25%;
-  --ring: 142 40% 55%;
+  --border: 216 30% 25%;
+  --input: 216 30% 25%;
+  --ring: 176 50% 50%;
 }
 
 @layer base {
