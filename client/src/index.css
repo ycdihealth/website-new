@@ -49,7 +49,7 @@
   --popover: 0 0% 100%;
   --popover-foreground: 216 46% 24%;
   
-  --primary: 176 60% 46%; /* Teal */
+  --primary: 12 88% 66%; /* Coral - Primary Action Color */
   --primary-foreground: 0 0% 100%;
   
   --secondary: 77 89% 75%; /* Lime Green */
@@ -58,7 +58,7 @@
   --muted: 216 20% 96%; /* Very light blue-grey */
   --muted-foreground: 216 30% 50%;
   
-  --accent: 12 88% 66%; /* Coral */
+  --accent: 176 60% 46%; /* Teal - Secondary/Accent Color */
   --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84% 60%;
@@ -66,7 +66,7 @@
   
   --border: 216 20% 90%;
   --input: 216 20% 90%;
-  --ring: 176 60% 46%;
+  --ring: 12 88% 66%;
   
   --radius: 0.5rem;
 }
@@ -82,7 +82,7 @@
   --popover: 216 46% 15%;
   --popover-foreground: 216 20% 95%;
   
-  --primary: 176 50% 50%; /* Teal adjusted for dark mode */
+  --primary: 12 88% 66%; /* Coral */
   --primary-foreground: 216 46% 15%;
   
   --secondary: 216 46% 24%; /* Dark Blue as secondary in dark mode */
@@ -91,7 +91,7 @@
   --muted: 216 46% 20%;
   --muted-foreground: 216 20% 70%;
   
-  --accent: 12 88% 66%; /* Coral stays same */
+  --accent: 176 50% 50%; /* Teal */
   --accent-foreground: 0 0% 100%;
   
   --destructive: 0 62% 30%;
@@ -99,7 +99,7 @@
   
   --border: 216 30% 25%;
   --input: 216 30% 25%;
-  --ring: 176 50% 50%;
+  --ring: 12 88% 66%;
 }
 
 @layer base {

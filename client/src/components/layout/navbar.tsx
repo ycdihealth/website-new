@@ -25,11 +25,10 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between px-4 md:px-8">
+      <div className="container flex h-24 items-center justify-between px-4 md:px-8">
         <Link href="/">
           <a className="flex items-center gap-2 hover:opacity-90 transition-opacity">
-            <img src={logoImage} alt="You Can Do It Health Coaching" className="h-12 w-12 object-contain" />
-            <span className="font-heading text-xl font-bold text-primary hidden sm:inline-block">You Can Do It Health Coaching</span>
+            <img src={logoImage} alt="You Can Do It Health Coaching" className="h-20 w-20 object-contain" />
           </a>
         </Link>
 
