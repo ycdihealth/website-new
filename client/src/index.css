@@ -115,6 +115,11 @@
 }
 
 /* Custom Utilities */
+@layer utilities {
+  .container {
+    @apply mx-auto;
+  }
+}
 .text-balance {
   text-wrap: balance;
 }
