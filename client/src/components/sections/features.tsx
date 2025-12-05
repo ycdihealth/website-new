@@ -1,6 +1,6 @@
 import { CheckCircle, Heart, Sun, Sprout, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import foodImage from "@assets/generated_images/fresh_healthy_food_ingredients.png";
+import wholePersonImage from "@assets/nutrition-movement-sleep_1764895716054.png";
 
 const features = [
   {
@@ -30,8 +30,8 @@ export function Features() {
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
             <img 
-              src={foodImage} 
-              alt="Healthy fresh ingredients" 
+              src={wholePersonImage} 
+              alt="Nutrition, movement, and sleep illustration" 
               className="relative rounded-2xl shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500 w-full object-cover aspect-[4/3]"
             />
           </div>
