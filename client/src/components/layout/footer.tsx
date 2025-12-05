@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Youtube, Heart } from "lucide-react";
+import logoImage from "@assets/FINAL_You_Can_Do_It_Health_Coaching_(400x400)_ROUND_1764900590206.png";
 
 // Custom TikTok icon since it might not be in this version of lucide
 const TikTok = ({ className }: { className?: string }) => (
@@ -27,7 +28,10 @@ export function Footer() {
           
           {/* Brand Column */}
           <div className="md:col-span-1 space-y-4">
-            <h3 className="font-heading text-xl font-bold text-primary">You Can Do It Health Coaching</h3>
+            <div className="flex items-center gap-2">
+              <img src={logoImage} alt="You Can Do It Health Coaching" className="h-10 w-10 object-contain" />
+              <h3 className="font-heading text-xl font-bold text-primary">You Can Do It Health Coaching</h3>
+            </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Empowering you to live your healthiest, happiest life through personalized coaching and sustainable habits.
             </p>

@@ -1,8 +1,9 @@
 import { Link, useLocation } from "wouter";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logoImage from "@assets/FINAL_You_Can_Do_It_Health_Coaching_(400x400)_ROUND_1764900590206.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,9 +27,9 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center justify-between px-4 md:px-8">
         <Link href="/">
-          <a className="flex items-center gap-2 font-heading text-2xl font-bold text-primary hover:opacity-90 transition-opacity">
-            <Leaf className="h-6 w-6 fill-primary" />
-            You Can Do It Health Coaching
+          <a className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+            <img src={logoImage} alt="You Can Do It Health Coaching" className="h-12 w-12 object-contain" />
+            <span className="font-heading text-xl font-bold text-primary hidden sm:inline-block">You Can Do It Health Coaching</span>
           </a>
         </Link>
 
