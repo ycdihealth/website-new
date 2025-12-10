@@ -12,9 +12,9 @@ export function PersonalizedCoaching() {
           
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight">
             Personalized Coaching That <br />
-            <span className="text-primary relative inline-block">
+            <span className="text-accent relative inline-block">
               Actually Fits Your Life
-              <svg className="absolute -bottom-2 left-0 w-full h-2 text-primary/30" viewBox="0 0 100 10" preserveAspectRatio="none">
+              <svg className="absolute -bottom-2 left-0 w-full h-2 text-accent/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="none" />
               </svg>
             </span>

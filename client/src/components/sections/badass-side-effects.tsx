@@ -12,7 +12,7 @@ export function BadassSideEffects() {
           <div className="space-y-8">
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight">
               Side Effects May Include… <br />
-              <span className="text-primary">Feeling Like a Total Badass</span>
+              <span className="text-accent">Feeling Like a Total Badass</span>
             </h2>
             
             <div className="bg-background p-8 rounded-2xl border-l-4 border-accent shadow-sm space-y-4">

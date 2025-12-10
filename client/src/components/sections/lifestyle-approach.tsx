@@ -43,12 +43,12 @@ export function LifestyleApproach() {
           <div className="order-1 space-y-8">
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight">
               Fat Loss, Muscle Gain, Motivation… <br />
-              <span className="text-primary">Whatever You Need</span>
+              <span className="text-accent">Whatever You Need</span>
             </h2>
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <div>
-                <p className="first-letter:text-5xl first-letter:font-heading first-letter:font-bold first-letter:text-primary first-letter:mr-2 float-left">
+                <p className="first-letter:text-5xl first-letter:font-heading first-letter:font-bold first-letter:text-accent first-letter:mr-2 float-left">
                   W
                 </p>
                 <p>
@@ -67,9 +67,9 @@ export function LifestyleApproach() {
             {/* Goals Grid */}
             <div className="grid grid-cols-2 gap-4 pt-2">
               {goals.map((goal, i) => (
-                <div key={i} className="flex items-center gap-3 bg-background p-4 rounded-xl shadow-sm border border-border/50 hover:border-primary/30 transition-colors">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <goal.icon className="w-5 h-5 text-primary" />
+                <div key={i} className="flex items-center gap-3 bg-background p-4 rounded-xl shadow-sm border border-border/50 hover:border-accent/30 transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                    <goal.icon className="w-5 h-5 text-accent" />
                   </div>
                   <span className="font-medium text-foreground">{goal.label}</span>
                 </div>

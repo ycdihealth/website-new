@@ -38,7 +38,7 @@ export function Features() {
           <div className="order-1 md:order-2 space-y-6">
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight">
               Whole-Person Coaching <br/>
-              <span className="text-primary text-3xl md:text-4xl block mt-2">(Because You’re More Than Your Step Count)</span>
+              <span className="text-accent text-3xl md:text-4xl block mt-2">(Because You’re More Than Your Step Count)</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We work on the whole you:
@@ -46,7 +46,7 @@ export function Features() {
             <ul className="space-y-3 pt-2">
               {["Habits", "Nutrition", "Movement", "Stress", "Sleep", "And everything that plays into your well-being"].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-foreground/80 font-medium">
-                  <CheckCircle className="h-5 w-5 text-primary shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-accent shrink-0" />
                   {item}
                 </li>
               ))}
@@ -70,7 +70,7 @@ export function Features() {
           {features.map((feature, i) => (
             <div key={i} className="bg-secondary/20 p-8 rounded-xl hover:bg-secondary/40 transition-colors duration-300 group">
               <div className="w-12 h-12 bg-background rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                <feature.icon className="h-6 w-6 text-primary" />
+                <feature.icon className="h-6 w-6 text-accent" />
               </div>
               <h3 className="font-heading text-xl font-bold mb-3">{feature.title}</h3>
               <p className="text-muted-foreground leading-relaxed">

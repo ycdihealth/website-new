@@ -29,7 +29,7 @@ export default function MeetCoach() {
                 <p className="text-xs text-muted-foreground text-center italic mt-2 -mb-6">Coach Andrea hiking The Cotswold Way</p>
               </div>
 
-              <div className="bg-primary/5 p-8 rounded-xl border border-primary/10 mt-8">
+              <div className="bg-accent/5 p-8 rounded-xl border border-accent/10 mt-8">
                 <h3 className="font-heading text-xl font-bold mb-4">Certifications & Training</h3>
                 <ul className="space-y-4">
                   <li className="flex flex-col gap-2">
@@ -66,7 +66,7 @@ export default function MeetCoach() {
                 Today, I’m here to support you with the same empathy, research-backed guidance, and cheerleading that helped me rebuild my own life. I’m your coach, your motivator, and the person who will remind you that you’re doing better than you think. Let’s help you feel strong, energized, and confident in your body, starting now.
               </p>
               
-              <p className="font-heading text-2xl font-bold text-primary pt-2">
+              <p className="font-heading text-2xl font-bold text-accent pt-2">
                 Because truly… You Can Do It.
               </p>
 
