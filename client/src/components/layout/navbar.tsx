@@ -37,7 +37,7 @@ export function Navbar() {
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
               <a className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-lg font-medium transition-colors hover:text-primary",
                 location === link.href ? "text-primary" : "text-foreground/80"
               )}>
                 {link.name}
@@ -46,7 +46,7 @@ export function Navbar() {
           ))}
           <button 
             onClick={handleScrollToNewsletter}
-            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+            className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors"
           >
             Newsletter
           </button>
@@ -75,7 +75,7 @@ export function Navbar() {
               <Link key={link.href} href={link.href}>
                 <a 
                   className={cn(
-                    "text-lg font-medium py-2 border-b border-border/50",
+                    "text-xl font-medium py-2 border-b border-border/50",
                     location === link.href ? "text-primary" : "text-foreground/80"
                   )}
                   onClick={() => setIsOpen(false)}
@@ -86,7 +86,7 @@ export function Navbar() {
             ))}
             <button 
               onClick={handleScrollToNewsletter}
-              className="text-lg font-medium text-left py-2 text-foreground/80 border-b border-border/50"
+              className="text-xl font-medium text-left py-2 text-foreground/80 border-b border-border/50"
             >
               Newsletter
             </button>
