@@ -35,7 +35,7 @@ export function Footer() {
               Empowering you to live your healthiest, happiest life through personalized coaching and sustainable habits.
             </p>
             <div className="flex items-center gap-4 pt-2">
-              <a href="#" className="text-foreground/60 hover:text-primary transition-colors hover-elevate p-2 rounded-full bg-background border border-border/50">
+              <a href="https://www.instagram.com/youcandoithealth" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors hover-elevate p-2 rounded-full bg-background border border-border/50">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="text-foreground/60 hover:text-primary transition-colors hover-elevate p-2 rounded-full bg-background border border-border/50">
