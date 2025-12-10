@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroImage from "@assets/generated_images/bright_airy_wellness_hero_image.png";
+import heroImage from "@assets/Untitled_design_1765408209329.png";
 
 export function Hero() {
   return (
