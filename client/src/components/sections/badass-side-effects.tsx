@@ -44,7 +44,7 @@ export function BadassSideEffects() {
             <img 
               src={badassImage} 
               alt="Woman flexing feeling confident" 
-              className="relative z-10 w-full max-w-md hover:scale-105 transition-transform duration-500 drop-shadow-xl"
+              className="relative z-10 w-full max-w-xl hover:scale-105 transition-transform duration-500 drop-shadow-xl"
             />
           </div>
           
