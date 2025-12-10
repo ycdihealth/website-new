@@ -10,7 +10,7 @@ const goals = [
   },
   {
     icon: TrendingDown,
-    label: "Lose Weight",
+    label: "Lose Fat",
   },
   {
     icon: Scale,
@@ -52,7 +52,7 @@ export function LifestyleApproach() {
                   W
                 </p>
                 <p>
-                  hether you want more energy, to lose weight, to break a plateau, or to finally feel strong again, I’ve got you. My approach? <strong>Lifestyle changes over extremes.</strong>
+                  hether you want more energy, to lose fat, to break a plateau, or to finally feel strong again, I’ve got you. My approach? <strong>Lifestyle changes over extremes.</strong>
                 </p>
                 <p className="mt-4">
                   Counting macros can help short-term, but nobody wants to spend the rest of their life logging every blueberry. You’ll learn the fundamentals that lead to lasting results - without needing to obsess over an app.
