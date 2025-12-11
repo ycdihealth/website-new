@@ -24,7 +24,7 @@ export default function MeetCoach() {
                 <img 
                   src={coachImage} 
                   alt="Coach Andrea" 
-                  className="w-full rounded-lg shadow-xl mb-8"
+                  className="w-1/2 mx-auto rounded-lg shadow-xl mb-8"
                 />
               </div>
 
