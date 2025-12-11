@@ -76,8 +76,8 @@ export function Footer() {
             <p className="text-sm text-muted-foreground mb-2">
               Ready to start your journey?
             </p>
-            <a href="mailto:hello@youcandoit.com" className="text-primary font-medium hover:underline">
-              hello@youcandoit.com
+            <a href="mailto:youcandoithealth@gmail.com" className="text-primary font-medium hover:underline">
+              youcandoithealth@gmail.com
             </a>
           </div>
         </div>
