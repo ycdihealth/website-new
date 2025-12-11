@@ -155,13 +155,63 @@ export default function LegalPage() {
               </>
             )}
 
-            {!location.includes("privacy") && (
+            {location.includes("disclaimer") && (
               <>
-                <p className="text-lg text-muted-foreground mb-6">
-                  This is a placeholder for the {getTitle()}.
-                </p>
+                <p className="font-bold text-lg mb-4">You Can Do It Health Coaching (Sole Proprietor)</p>
+                
+                <h3 className="text-xl font-bold mt-8 mb-4">1. Educational & Informational Purposes Only</h3>
                 <p>
-                  Please provide the content for this section.
+                  The content on this website, including any blog posts, guides, emails, downloadable materials, programs, or coaching services, is provided by You Can Do It Health Coaching for educational and informational purposes only. Nothing on this website is intended to be, nor should it be interpreted as, medical advice, diagnosis, or treatment.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">2. Not Medical or Nutritional Therapy Advice</h3>
+                <p>
+                  I am a Certified Nutrition Coach, not a medical doctor, registered dietitian, nurse, or licensed healthcare provider. The information on this website and in coaching sessions is not a substitute for professional medical advice, diagnosis, or treatment. Always consult with your physician or qualified healthcare provider before making any changes to your diet, exercise routine, medications, or health practices.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">3. Personal Responsibility & Assumption of Risk</h3>
+                <p>
+                  By using this website or participating in coaching, you acknowledge that you alone are responsible for your health decisions and outcomes. You agree to use your best judgment and consult a medical professional when appropriate. You understand that any actions you take based on the information provided are taken at your own risk.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">4. No Guarantees</h3>
+                <p>
+                  While I am committed to providing high-quality guidance and support, You Can Do It Health Coaching cannot and does not guarantee specific results. Your progress depends on individual factors such as consistency, effort, health status, and personal circumstances. Any success stories or testimonials represent individual experiences and are not promises of what you will achieve.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">5. Accuracy & Updates</h3>
+                <p>
+                  I strive to ensure that the information on this website is accurate and current. However, I make no warranties regarding completeness, reliability, or accuracy. Content may be updated, changed, or removed at any time without notice.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">6. Intellectual Property</h3>
+                <p>
+                  All content on this website—including text, graphics, logos, photos, videos, downloadable materials, and program content—is the property of You Can Do It Health Coaching unless otherwise stated. You may not reproduce, distribute, modify, or create derivative works from any content without prior written permission.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">7. Limited Liability</h3>
+                <p>
+                  To the fullest extent permitted by law, You Can Do It Health Coaching and its sole proprietor are not liable for any damages or injuries resulting from your use of the website or coaching services. This includes, but is not limited to, direct, indirect, incidental, or consequential damages.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">8. External Links</h3>
+                <p>
+                  This website may contain links to third-party sites. These links are provided for convenience only. I do not endorse, control, or take responsibility for the content, policies, or practices of external websites.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">9. Use of the Website</h3>
+                <p>
+                  By using this website, you agree not to engage in unlawful, harmful, or disruptive behavior, including attempts to access restricted areas, scrape content, or interfere with site functionality.
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">10. Privacy</h3>
+                <p>
+                  Any personal information you provide is handled in accordance with my Privacy Policy. You are responsible for maintaining the confidentiality of your login information (if applicable).
+                </p>
+
+                <h3 className="text-xl font-bold mt-8 mb-4">11. Agreement</h3>
+                <p>
+                  By accessing this website, downloading materials, or engaging in coaching services through You Can Do It Health Coaching, you acknowledge that you have read, understood, and agree to these Disclaimer & Terms of Use.
                 </p>
               </>
             )}
