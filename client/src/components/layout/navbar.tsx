@@ -14,12 +14,16 @@ export function Navbar() {
     { name: "Meet Your Coach", href: "/meet-coach" },
   ];
 
-  const handleScrollToNewsletter = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setIsOpen(false);
-    const element = document.getElementById("newsletter");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const handleNewsletterClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (location === "/") {
+      e.preventDefault();
+      setIsOpen(false);
+      const element = document.getElementById("newsletter");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      setIsOpen(false);
     }
   };
 
@@ -44,12 +48,13 @@ export function Navbar() {
               </a>
             </Link>
           ))}
-          <button 
-            onClick={handleScrollToNewsletter}
+          <a 
+            href="/#newsletter"
+            onClick={handleNewsletterClick}
             className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors"
           >
             Newsletter
-          </button>
+          </a>
           <Button asChild variant="default" size="lg" className="rounded-full font-semibold shadow-md hover:shadow-lg transition-all">
             <a href="https://calendly.com/youcandoithealth/free-discovery-call?back=1" target="_blank" rel="noopener noreferrer">
               Free Discovery Call
@@ -84,12 +89,13 @@ export function Navbar() {
                 </a>
               </Link>
             ))}
-            <button 
-              onClick={handleScrollToNewsletter}
+            <a 
+              href="/#newsletter"
+              onClick={handleNewsletterClick}
               className="text-xl font-medium text-left py-2 text-foreground/80 border-b border-border/50"
             >
               Newsletter
-            </button>
+            </a>
             <Button asChild className="w-full mt-4 rounded-full" size="lg">
               <a href="https://calendly.com/youcandoithealth/free-discovery-call?back=1" target="_blank" rel="noopener noreferrer">
                 Free Discovery Call
