@@ -34,14 +34,10 @@ export default function MeetCoach() {
                   <li className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
                        <img src={pnBadge} alt="Precision Nutrition Level 1 Certification Badge" className="w-auto h-auto max-w-full object-contain" />
-                       <Badge variant="outline" className="bg-background h-fit">Certified Nutrition Coach</Badge>
                     </div>
                     <span className="text-sm text-muted-foreground">Precision Nutrition Level 1 Nutrition Coaching Certification</span>
                   </li>
                   <li className="flex flex-col gap-1">
-                    <div className="flex items-center gap-2">
-                      <Badge variant="outline" className="bg-background">Fitness Advancement Mentorship</Badge>
-                    </div>
                     <span className="text-sm text-muted-foreground">Active member of the Fitness Advancement Mentorship program led by Alan Aragon</span>
                   </li>
                 </ul>
