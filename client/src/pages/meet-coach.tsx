@@ -30,15 +30,17 @@ export default function MeetCoach() {
 
               <div className="bg-accent/5 p-8 rounded-xl border border-accent/10 mt-8 w-3/4 mx-auto">
                 <h3 className="font-heading text-xl font-bold mb-4">Certifications & Training</h3>
-                <ul className="space-y-4">
-                  <li className="flex flex-col gap-2">
-                    <div className="flex items-center gap-2">
-                       <img src={pnBadge} alt="Precision Nutrition Level 1 Certification Badge" className="w-auto h-auto max-w-full object-contain" />
+                <ul className="space-y-4 list-disc pl-5">
+                  <li className="text-sm text-muted-foreground">
+                    <div className="flex flex-col gap-2">
+                      <div className="flex items-center gap-2">
+                        <img src={pnBadge} alt="Precision Nutrition Level 1 Certification Badge" className="w-auto h-auto max-w-full object-contain" />
+                      </div>
+                      <span>Precision Nutrition Level 1 Nutrition Coaching Certification</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">Precision Nutrition Level 1 Nutrition Coaching Certification</span>
                   </li>
-                  <li className="flex flex-col gap-1">
-                    <span className="text-sm text-muted-foreground">Active member of the Fitness Advancement Mentorship program led by Alan Aragon</span>
+                  <li className="text-sm text-muted-foreground">
+                    <span>Active member of the Fitness Advancement Mentorship program led by Alan Aragon</span>
                   </li>
                 </ul>
               </div>
