@@ -23,10 +23,9 @@ export default function MeetCoach() {
               <div className="relative">
                 <img 
                   src={coachImage} 
-                  alt="Coach Andrea hiking The Cotswold Way" 
+                  alt="Coach Andrea" 
                   className="w-full rounded-lg shadow-xl mb-8"
                 />
-                <p className="text-xs text-muted-foreground text-center italic mt-2 -mb-6">Coach Andrea hiking The Cotswold Way</p>
               </div>
 
               <div className="bg-accent/5 p-8 rounded-xl border border-accent/10 mt-8">
