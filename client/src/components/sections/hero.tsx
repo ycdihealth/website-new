@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import heroImage from "@assets/Untitled_design_1765408209329.png";
+import { Link } from "wouter";
 
 export function Hero() {
   return (
@@ -35,9 +36,9 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild size="xl" variant="outline" className="rounded-full text-lg px-8 h-14 bg-background/50 backdrop-blur border-primary/20 text-primary hover:bg-primary/5">
-              <a href="#meet">
+              <Link href="/meet-coach">
                 Meet Your Coach
-              </a>
+              </Link>
             </Button>
           </div>
         </motion.div>
