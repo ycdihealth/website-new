@@ -55,7 +55,7 @@ export function Features() {
               Plus, I support all dietary preferences - gluten free, dairy free, vegan, vegetarian, and <span className="italic text-foreground">“I swear I’m trying.”</span>
             </p>
             
-            <div className="pt-4">
+            <div className="pt-4 flex justify-center md:justify-start">
               <Button asChild size="xl" className="rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg h-14 px-8">
                 <a href="https://calendly.com/youcandoithealth/free-discovery-call?back=1" target="_blank" rel="noopener noreferrer">
                   Start Whole-Me Care
