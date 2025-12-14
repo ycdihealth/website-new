@@ -32,7 +32,6 @@ export function BadassSideEffects() {
               <Button asChild size="xl" className="rounded-full bg-primary hover:bg-primary/90 shadow-lg text-lg h-16 px-8 w-full md:w-auto transition-all hover:-translate-y-1">
                 <a href="https://calendly.com/youcandoithealth/free-discovery-call?back=1" target="_blank" rel="noopener noreferrer">
                   I Accept These Side Effects
-                  <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
             </div>
