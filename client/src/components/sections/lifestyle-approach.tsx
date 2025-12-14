@@ -75,7 +75,7 @@ export function LifestyleApproach() {
             <div className="pt-6">
               <Button asChild size="xl" className="w-full md:w-auto rounded-full bg-primary hover:bg-primary/90 shadow-lg text-lg h-16 px-8 transition-all hover:-translate-y-1">
                 <a href="https://calendly.com/youcandoithealth/free-discovery-call?back=1" target="_blank" rel="noopener noreferrer">
-                  I’m Ready for No More Blueberry Counting
+                  Let's Feel Good
                 </a>
               </Button>
             </div>
