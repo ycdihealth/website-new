@@ -58,7 +58,7 @@ export function Features() {
             <div className="pt-4">
               <Button asChild size="xl" className="rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg h-14 px-8">
                 <a href="https://calendly.com/youcandoithealth/free-discovery-call?back=1" target="_blank" rel="noopener noreferrer">
-                  All of Me Matters
+                  Start Whole-Me Care
                 </a>
               </Button>
             </div>
