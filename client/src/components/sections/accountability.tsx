@@ -53,8 +53,8 @@ export function Accountability() {
               </div>
             </div>
 
-            <div className="pt-4">
-              <Button asChild size="xl" className="rounded-full bg-primary hover:bg-primary/90 shadow-lg text-lg h-16 px-8 w-full md:w-auto">
+            <div className="pt-4 flex justify-center md:justify-start">
+              <Button asChild size="xl" className="rounded-full bg-primary hover:bg-primary/90 shadow-lg text-lg h-16 px-8">
                 <a href="https://calendly.com/youcandoithealth/free-discovery-call?back=1" target="_blank" rel="noopener noreferrer">
                   I Want That Accountability
                 </a>
