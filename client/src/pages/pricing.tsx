@@ -29,7 +29,7 @@ export default function PricingPage() {
               My coaching program gives you consistent support, accountability, and customized guidance without the overwhelm or one-size-fits-all advice you’ll find online. Together, we’ll build habits that actually stick.
             </p>
             
-            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 inline-block w-full max-w-2xl">
+            <div className="bg-accent/5 border border-accent/20 rounded-2xl p-8 inline-block w-full max-w-2xl">
               <h3 className="font-heading text-xl font-bold mb-6 text-foreground">All Plans Include:</h3>
               <div className="grid sm:grid-cols-2 gap-4 text-left">
                 {[
@@ -41,8 +41,8 @@ export default function PricingPage() {
                   "Ongoing support"
                 ].map((feature, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                      <Check className="h-4 w-4 text-primary" />
+                    <div className="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                      <Check className="h-4 w-4 text-accent" />
                     </div>
                     <span className="font-medium text-foreground/80">{feature}</span>
                   </div>
