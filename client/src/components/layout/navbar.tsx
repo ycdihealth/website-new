@@ -31,7 +31,7 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-40 items-center justify-between px-4 md:px-8">
         <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
-          <img src={logoImage} alt="You Can Do It Health Coaching" className="h-36 w-auto object-contain" />
+          <img src={logoImage} alt="You Can Do It Health Coaching" loading="eager" className="h-36 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}

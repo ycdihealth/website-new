@@ -24,6 +24,8 @@ export default function MeetCoach() {
                 <img 
                   src={coachImage} 
                   alt="Coach Andrea" 
+                  loading="lazy"
+                  decoding="async"
                   className="w-3/4 mx-auto rounded-lg shadow-xl mb-8"
                 />
               </div>
@@ -33,7 +35,7 @@ export default function MeetCoach() {
                 <ul className="space-y-4">
                   <li className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
-                       <img src={pnBadge} alt="Precision Nutrition Level 1 Certification Badge" className="w-auto h-auto max-w-full object-contain" />
+                       <img src={pnBadge} alt="Precision Nutrition Level 1 Certification Badge" loading="lazy" decoding="async" className="w-auto h-auto max-w-full object-contain" />
                     </div>
                     <span className="text-sm text-muted-foreground">Precision Nutrition Level 1 Nutrition Coaching Certification</span>
                   </li>

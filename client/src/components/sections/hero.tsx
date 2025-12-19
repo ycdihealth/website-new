@@ -11,6 +11,7 @@ export function Hero() {
         <img 
           src={heroImage} 
           alt="Bright healthy living space" 
+          fetchPriority="high"
           className="w-full h-full object-cover object-[75%_50%] lg:object-center opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-transparent" />

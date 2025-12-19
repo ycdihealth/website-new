@@ -32,6 +32,8 @@ export function Features() {
             <img 
               src={wholePersonImage} 
               alt="Nutrition, movement, and sleep illustration" 
+              loading="lazy"
+              decoding="async"
               className="relative rounded-2xl shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500 w-full object-cover aspect-[4/3]"
             />
           </div>

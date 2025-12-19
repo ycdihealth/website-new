@@ -35,6 +35,8 @@ export function LifestyleApproach() {
             <img 
               src={blueberryImage} 
               alt="Cute blueberries saying No Blueberry Counting" 
+              loading="lazy"
+              decoding="async"
               className="relative z-10 w-full max-w-xl hover:scale-105 transition-transform duration-500 drop-shadow-xl"
             />
           </div>
