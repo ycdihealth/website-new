@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroImage from "@assets/Untitled_design_1765408209329.png";
+import heroImage from "@assets/hero_image.webp";
 import { Link } from "wouter";
 
 export function Hero() {

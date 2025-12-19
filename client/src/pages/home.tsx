@@ -8,7 +8,7 @@ import { LifestyleApproach } from "@/components/sections/lifestyle-approach";
 import { Accountability } from "@/components/sections/accountability";
 import { BadassSideEffects } from "@/components/sections/badass-side-effects";
 import { motion } from "framer-motion";
-import coachImage from "@assets/generated_images/friendly_health_coach_portrait.png";
+import coachImage from "@assets/generated_images/friendly_health_coach_portrait.webp";
 import { Link, useLocation } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";

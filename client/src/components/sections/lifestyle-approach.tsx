@@ -1,7 +1,7 @@
 import { Dumbbell, TrendingDown, Zap, Scale } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import blueberryImage from "@assets/noblueberrycounting_1764894130208.png";
+import blueberryImage from "@assets/blueberry_image.webp";
 
 const goals = [
   {

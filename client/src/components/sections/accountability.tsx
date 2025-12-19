@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Calendar, Sun, ArrowRight } from "lucide-react";
-import accountabilityImage from "@assets/youvegotthis_1764895849091.png";
+import accountabilityImage from "@assets/accountability_image.webp";
 
 export function Accountability() {
   return (

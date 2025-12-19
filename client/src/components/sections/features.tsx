@@ -1,6 +1,6 @@
 import { CheckCircle, Heart, Sun, Sprout, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import wholePersonImage from "@assets/nutrition-movement-sleep_1764895716054.png";
+import wholePersonImage from "@assets/features_image.webp";
 
 const features = [
   {

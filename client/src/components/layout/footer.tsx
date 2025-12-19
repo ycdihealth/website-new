@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Youtube, Heart } from "lucide-react";
-import logoImage from "@assets/HORIZONTAL_You_Can_Do_It_Health_Coaching_(400_x_200_px)_1765408281442.png";
+import logoImage from "@assets/logo_horizontal.webp";
 
 // Custom TikTok icon since it might not be in this version of lucide
 const TikTok = ({ className }: { className?: string }) => (

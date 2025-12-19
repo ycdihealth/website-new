@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
-import coachImage from "@assets/IMG_0624_(1)_1765412338473.jpeg";
-import pnBadge from "@assets/PN_badge_L1-N_225x225_1764896104490.png";
+import coachImage from "@assets/coach_portrait.webp";
+import pnBadge from "@assets/pn_badge.webp";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 

@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import logoImage from "@assets/HORIZONTAL_You_Can_Do_It_Health_Coaching_(400_x_200_px)_1765408281442.png";
+import logoImage from "@assets/logo_horizontal.webp";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

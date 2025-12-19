@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, AlertTriangle } from "lucide-react";
-import badassImage from "@assets/badass_1764895974388.png";
+import badassImage from "@assets/badass_image.webp";
 
 export function BadassSideEffects() {
   return (
