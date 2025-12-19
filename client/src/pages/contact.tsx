@@ -43,23 +43,26 @@ export default function ContactPage() {
       submitBtn.innerHTML = 'Sending...';
     }
 
+    const formData = new FormData();
+    formData.append("access_key", "c9a136fb-cd4a-4aeb-a182-18b09b84f146");
+    formData.append("name", values.name);
+    formData.append("email", values.email);
+    formData.append("message", values.message);
+    formData.append("subject", `New Message from ${values.name}`);
+    formData.append("from_name", "You Can Do It Health Coaching Website");
+
     fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        access_key: "c9a136fb-cd4a-4aeb-a182-18b09b84f146",
-        name: values.name,
-        email: values.email,
-        message: values.message,
-        subject: `New Message from ${values.name}`,
-        from_name: "You Can Do It Health Coaching Website"
-      })
+      body: formData
     })
     .then(async (response) => {
-      const json = await response.json();
+      let json;
+      try {
+        json = await response.json();
+      } catch (e) {
+        console.error("JSON parse error", e);
+      }
+
       if (response.status === 200) {
         toast({
           title: "Message Sent!",
@@ -68,15 +71,17 @@ export default function ContactPage() {
         });
         form.reset();
       } else {
-        throw new Error(json.message || "Failed to send");
+        console.error("Server responded with error:", json);
+        throw new Error(json?.message || "Failed to send message. Please try again.");
       }
     })
     .catch(error => {
-      console.error("Form error:", error);
+      console.error("Form submission error:", error);
       toast({
         variant: "destructive",
-        title: "Something went wrong",
-        description: "Please try again later or email me directly at youcandoithealth@gmail.com",
+        title: "Error Sending Message",
+        description: error.message || "Something went wrong. Please email youcandoithealth@gmail.com directly.",
+        duration: 5000,
       });
     })
     .finally(() => {
