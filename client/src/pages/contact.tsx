@@ -36,53 +36,23 @@ export default function ContactPage() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Show loading state
-    const submitBtn = document.querySelector('button[type="submit"]');
-    if (submitBtn) {
-      submitBtn.setAttribute('disabled', 'true');
-      submitBtn.innerHTML = 'Sending...';
-    }
+    // Construct the mailto link
+    const subject = encodeURIComponent(`New Message from ${values.name}`);
+    const body = encodeURIComponent(`${values.message}\n\nFrom: ${values.name} (${values.email})`);
+    const mailtoLink = `mailto:youcandoithealth@gmail.com?subject=${subject}&body=${body}`;
 
-    fetch("https://formsubmit.co/ajax/youcandoithealth@gmail.com", {
-      method: "POST",
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        name: values.name,
-        email: values.email,
-        message: values.message,
-        _subject: `New Message from ${values.name}`,
-        _template: "table" // Optional: makes the email look nicer
-      })
-    })
-    .then(response => {
-      if (response.ok) {
-        toast({
-          title: "Message Sent!",
-          description: "Thanks for reaching out. I'll get back to you in a jiffy!",
-          duration: 5000,
-        });
-        form.reset();
-      } else {
-        throw new Error("Failed to send");
-      }
-    })
-    .catch(error => {
-      console.error("Form error:", error);
-      toast({
-        variant: "destructive",
-        title: "Something went wrong",
-        description: "Please try again or email me directly at youcandoithealth@gmail.com",
-      });
-    })
-    .finally(() => {
-      if (submitBtn) {
-        submitBtn.removeAttribute('disabled');
-        submitBtn.innerHTML = 'Send Message <svg class="ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>';
-      }
+    // Show success feedback
+    toast({
+      title: "Opening Email Client...",
+      description: "Drafting your message to Andrea!",
+      duration: 3000,
     });
+
+    // Reset form
+    form.reset();
+
+    // Open default email client
+    window.location.href = mailtoLink;
   }
 
   return (
