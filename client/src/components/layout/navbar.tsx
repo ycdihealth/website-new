@@ -30,22 +30,18 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-40 items-center justify-between px-4 md:px-8">
-        <Link href="/">
-          <a className="flex items-center gap-2 hover:opacity-90 transition-opacity">
-            <img src={logoImage} alt="You Can Do It Health Coaching" className="h-36 w-auto object-contain" />
-          </a>
+        <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+          <img src={logoImage} alt="You Can Do It Health Coaching" className="h-36 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href}>
-              <a className={cn(
-                "text-lg font-medium transition-colors hover:text-primary",
-                location === link.href ? "text-primary" : "text-foreground/80"
-              )}>
-                {link.name}
-              </a>
+            <Link key={link.href} href={link.href} className={cn(
+              "text-lg font-medium transition-colors hover:text-primary",
+              location === link.href ? "text-primary" : "text-foreground/80"
+            )}>
+              {link.name}
             </Link>
           ))}
           <a 
@@ -77,16 +73,12 @@ export function Navbar() {
         <div className="md:hidden absolute top-40 left-0 w-full bg-background border-b border-border animate-in slide-in-from-top-5 fade-in duration-200">
           <div className="flex flex-col p-6 gap-4">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a 
-                  className={cn(
-                    "text-xl font-medium py-2 border-b border-border/50",
-                    location === link.href ? "text-primary" : "text-foreground/80"
-                  )}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </a>
+              <Link key={link.href} href={link.href} className={cn(
+                  "text-xl font-medium py-2 border-b border-border/50",
+                  location === link.href ? "text-primary" : "text-foreground/80"
+                )}
+                onClick={() => setIsOpen(false)}>
+                {link.name}
               </Link>
             ))}
             <a 
