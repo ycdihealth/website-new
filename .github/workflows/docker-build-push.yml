@@ -41,7 +41,7 @@ jobs:
       #     password: ${{ secrets.DOCKER_TOKEN }}
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
       - id: output
-        run: echo "image_tag=$(git branch --show-current)-$(git rev-parse --short=7 HEAD)-$(git log -1 --pretty=%ct)" >> $GITHUB_OUTPUT
+        run: echo "image_tag=dev-$(git rev-parse --short=7 HEAD)-$(git log -1 --pretty=%ct)" >> $GITHUB_OUTPUT
       - uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051 # v5.10.0
         id: meta
         with:
